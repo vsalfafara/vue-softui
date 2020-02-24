@@ -1,8 +1,8 @@
 <template>
     <nav class="neo">
-        <router-link to="/button">Buttons</router-link>
-        <router-link to="/list">List</router-link>
-        <router-link to="/card">Card</router-link>
+        <router-link to="/vue-softui/button">Buttons</router-link>
+        <router-link to="/vue-softui/list">List</router-link>
+        <router-link to="/vue-softui/card">Card</router-link>
     </nav>
 </template>
 
