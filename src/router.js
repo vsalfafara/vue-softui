@@ -5,15 +5,15 @@ import List from './components/List.vue'
 
 const routes = [
     {
-        path: '/card',
+        path: '/vue-softui/card',
         component: Card
     },
     {
-        path: '/button',
+        path: '/vue-softui/button',
         component: Button
     },
     {
-        path: '/list',
+        path: '/vue-softui/list',
         component: List
     }
 ]
