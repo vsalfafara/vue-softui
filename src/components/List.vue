@@ -25,7 +25,7 @@ export default {
     },
     methods: {
         posts: function() {
-            axios.get('http://jsonplaceholder.typicode.com/posts?_start=1&_limit=10',
+            axios.get('https://jsonplaceholder.typicode.com/posts?_start=1&_limit=10',
             {
                 headers: {
                 'Access-Control-Allow-Origin': '*',
