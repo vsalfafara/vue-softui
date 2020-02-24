@@ -2,38 +2,26 @@
     <div class="container">
         <h3>List</h3>
         <ul>
-            <li v-for="post in data" :key="post.id">#{{post.id}}: {{post.title}}</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quibusdam?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quibusdam?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quibusdam?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quibusdam?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quibusdam?</li>
         </ul>
         <h3>Neo List</h3>
         <ul class="neo">
-            <li v-for="post in data" :key="post.id + 100">#{{post.id}}: {{post.title}}</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eius.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eius.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eius.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eius.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eius.</li>
         </ul>
     </div>
 </template>
 
 <script>
-import * as axios from 'axios'
 export default {
     name: 'List',
-    data() {
-        return {
-            data: null
-        }
-    },
-    mounted() {
-        this.posts()
-    },
-    methods: {
-        posts: function() {
-            axios.get('https://jsonplaceholder.typicode.com/posts?_start=1&_limit=10',
-            {
-                headers: {
-                'Access-Control-Allow-Origin': '*',
-                },
-            })
-            .then(data => (this.data = data.data));
-        }
-    }
 }
 </script>
 
