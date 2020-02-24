@@ -1,4 +1,4 @@
-# vue-dashboard
+# neomorph-bem
 
 ## Project setup
 ```
